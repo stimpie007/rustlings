@@ -13,7 +13,6 @@ fn total_cost(item_quantity: &str) -> Result<i32, ParseIntError> {
     Ok(qty * cost_per_item + processing_fee)
 }
 
-// TODO: Fix the compiler error by changing the signature and body of the
 // `main` function.
 fn main() -> Result<(), ParseIntError>{
     let mut tokens = 100;

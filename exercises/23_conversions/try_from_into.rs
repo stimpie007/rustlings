@@ -23,7 +23,6 @@ enum IntoColorError {
     IntConversion,
 }
 
-// TODO: Tuple implementation.
 // Correct RGB color values must be integers in the 0..=255 range.
 impl TryFrom<(i16, i16, i16)> for Color {
     type Error = IntoColorError;
@@ -42,7 +41,6 @@ impl TryFrom<(i16, i16, i16)> for Color {
     }
 }
 
-// TODO: Array implementation.
 impl TryFrom<[i16; 3]> for Color {
     type Error = IntoColorError;
 
@@ -60,7 +58,6 @@ impl TryFrom<[i16; 3]> for Color {
     }
 }
 
-// TODO: Slice implementation.
 // This implementation needs to check the slice length.
 impl TryFrom<&[i16]> for Color {
     type Error = IntoColorError;

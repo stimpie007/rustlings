@@ -8,6 +8,6 @@ mod macros {
     }
 }
 
-fn main() {
-    my_macro!();
-}
+fn main() { macro_rules! my_macro {
+     () => {};
+ }}
